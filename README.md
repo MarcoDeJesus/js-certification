@@ -19,6 +19,12 @@ Follow these steps to start working on this repo:
 6. Create Merge Request to Master
 7. Add Cesar or anyone as a reviewer
 
+#### Library used
+
+We use webslides to create the content of this page project. Please read the documentation to start editing your pages.
+
+[Webslides.tv](https://www.webslides.tv)
+
 
 
 
