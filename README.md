@@ -15,7 +15,7 @@ Follow these steps to start working on this repo:
 3. Start coding
 
 #### Push changes
-5. Push your changes to your branch in Git repo: `git push origin <branch name>`
+5. Push your changes to your branch in Git repo: `git push origin <branch name>` (Do not push directly to master)
 6. Create Merge Request to Master
 7. Add Cesar or anyone as a reviewer
 
