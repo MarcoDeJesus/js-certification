@@ -14,10 +14,18 @@ Follow these steps to start working on this repo:
 2. Create a new branch: `git checkout -b <name of the branch>`
 3. Start coding
 
+#### Local changes
+Please after your changes insert this commands
+
+1. git status
+2. git add  (all the files you been worked on)
+3. git commit -m'commit message'
+
+
 #### Push changes
-5. Push your changes to your branch in Git repo: `git push origin <branch name>` (Do not push directly to master)
-6. Create Merge Request to Master
-7. Add Cesar or anyone as a reviewer
+1. Push your changes to your branch in Git repo: `git push origin <branch name>` (Do not push directly to master)
+2. Create Merge Request to Master
+3. Add Cesar or anyone as a reviewer
 
 #### Library used
 
