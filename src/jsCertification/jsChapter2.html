@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
     <!-- CLEAN MARKUP = GOOD KARMA.
       Hi source code lover,
 
@@ -31,8 +29,6 @@
 
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
-
-    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
     <!-- FACEBOOK -->
     <meta property="og:url" content="http://epam.com/" /> <!-- YOUR URL/PERMALINK -->
@@ -67,14 +63,9 @@
 
 <main role="main">
     <article id="webslides" class="vertical">
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
         <!-- First Slide -->
         <section class="bg-black-blue aligncenter">
-            <span class="background dark" style="background-image:url('https://source.unsplash.com/o4mP43oPGHk/')"></span>
+            <span class="background dark" style="background-image:url('https://source.unsplash.com/-wMuKOvzbHs/')"></span>
             <!--.wrap = container (width: 90%) with fadein animation -->
             <div class="wrap">
                 <h1 class="text-landing strong">Working with Variables and Data in  JavaScript</h1>
@@ -89,21 +80,81 @@
                 <span class="alignleft">
                  <strong>Created by:</strong> JS Automation SET Practice EPAM Mexico.
                 </span>
-                        <span class="alignright">
-                      <a href="https://twitter.com/Ces_BearGdl" title="JS content on twitter">
-                        <svg class="fa-twitter">
-                          <use xlink:href="#fa-twitter"></use>
-                        </svg>
-                        @ces_beargdl
-                  </a>
-                        </span>
                     </p>
                 </div>
             </footer>
             <!-- .end .wrap -->
         </section>
+
         <!-- Second Slide -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('https://source.unsplash.com/LOHVrTsdvzY/')"></span>
+            <!--.wrap = container (width: 90%) with fadein animation -->
+            <div class="wrap">
+                <h1 class="text-landing strong aligncenter">JS To Communicate with the User</h1>
+                <br>
+                <p class="text-intro">
+                    In many Web applications, you occasionally see message windows alerting you to changing conditions, choices, warnings or other notices.
+                    <br>
+                    Regardless of the type of Website, it is important to communicate with the user. The mode of communication may vary from site to site and developer to developer. In this lesson, you will examine four ways of communicating with the user:
+                </p>
+                <div class="wrap size-40">
+                    <div class="grid ">
+                        <div class="column text-info">
+                            <li>A text message that displays in a pop-up window &nbsp; <button class="button-example" type="button" onclick="alert('This is an alert!')">alert!</button></li>
+                            <li>A request for information in a pop-up window &nbsp; <button class="button-example" type="button" onclick="console.log(prompt('Please enter your name', 'Harry Potter'))">prompt!</button></li>
+                            <li>A confirmation request in a pop-up window &nbsp;  <button class="button-example" type="button" onclick="confirm('Press a button!');">confirm!</button></li>
+                            <li>A text message in the browser window  <strong>document.write()</strong>&nbsp; <button class="button-example" type="button" onclick="myFunction();">write!</button></li>
+                        </div>
+                        <div>
+                            <pre>
+var person = prompt("Please enter your name", "Harry Potter");
+
+if (person == null || person == "") {
+  txt = "User cancelled the prompt.";
+} else {
+  txt = "Hello " + person + "! How are you today?";
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                    document.open();
+                    document.write("<h1> Hello EPAMers </h1>");
+                    document.close();
+                }
+            </script>
+        </section>
+
         <!-- Third Slide -->
+        <section class="bg-black-blue fullscreen">
+            <span class="background light" style="background-image:url('https://source.unsplash.com/AxAPuIRWHGk/')"></span>
+            <div class="wrap bg-trans-light">
+                <h1 class="text-landing strong aligncenter">Using Data More Than Once </h1>
+                <br>
+                <h3>Variables</h3>
+                <p>A <strong>variable</strong> is a named space of memory. It is a container that holds a value, which you can then access
+                    repeatedly in your script. Like many other programming languages, JavaScript allows you to declare variables
+                    and use their stored values. The name "variable" is appropriate because the values you store will vary from one variable to the next.
+                    You should also note that a variable's value may change over the course of a script sequence.
+                </p>
+                <h3>Data Types</h3>
+                <p> A data type is a definition of the type of information that a variable holds. JavaScript provides two different
+                    types of data types: <strong>primitive</strong> and <strong>non-primitive</strong>.</p>
+                <p> The latest ECMAScript standard defines 6 primitive data types:</p>
+                <div class="card">
+                    <li>String</li>
+                    <li>Number</li>
+                    <li>Boolean</li>
+                    <li>BigInt</li>
+                    <li>Symbol</li>
+                    <li>undefined</li>
+                </div>
+            </div>
+        </section>
     </article>
 </main>
 <!--main-->
