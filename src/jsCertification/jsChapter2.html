@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>JavaScript Certification</title>
+    <meta name="description" content="Program to certify Engineers to JavaScript Language">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://epam.com/" /> <!-- YOUR URL/PERMALINK -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides Documentation: Classes" /> <!-- EDIT -->
+    <meta property="og:description" content="A quick reference guide. This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:23:46"> <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Documentation: Classes"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides Cheat Sheet.This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+</head>
+<body>
+
+<main role="main">
+    <article id="webslides" class="vertical">
+        <!-- First Slide -->
+        <section class="bg-black-blue aligncenter">
+            <span class="background dark" style="background-image:url('https://source.unsplash.com/-wMuKOvzbHs/')"></span>
+            <!--.wrap = container (width: 90%) with fadein animation -->
+            <div class="wrap">
+                <h1 class="text-landing strong">Working with Variables and Data in  JavaScript</h1>
+                <p class="text-intro"> Chapter Two </p>
+                <div class="wrap">
+                    <a href="https://www.epam.com" target="_blank"><img class="size-20 aligncenter" src="../static/images/epam_logo.svg" title="epam website" alt="EPAM logo"></a>STRIVE FOR EXCELLENCE
+                </div>
+            </div>
+            <footer>
+                <div class="wrap">
+                    <p>
+                <span class="alignleft">
+                 <strong>Created by:</strong> JS Automation SET Practice EPAM Mexico.
+                </span>
+                    </p>
+                </div>
+            </footer>
+            <!-- .end .wrap -->
+        </section>
+
+        <!-- Second Slide -->
+        <section class="bg-black-blue">
+            <span class="background dark" style="background-image:url('https://source.unsplash.com/LOHVrTsdvzY/')"></span>
+            <!--.wrap = container (width: 90%) with fadein animation -->
+            <div class="wrap">
+                <h1 class="text-landing strong aligncenter">JS To Communicate with the User</h1>
+                <br>
+                <p class="text-intro">
+                    In many Web applications, you occasionally see message windows alerting you to changing conditions, choices, warnings or other notices.
+                    <br>
+                    Regardless of the type of Website, it is important to communicate with the user. The mode of communication may vary from site to site and developer to developer. In this lesson, you will examine four ways of communicating with the user:
+                </p>
+                <div class="wrap size-40">
+                    <div class="grid ">
+                        <div class="column text-info">
+                            <li>A text message that displays in a pop-up window &nbsp; <button class="button-example" type="button" onclick="alert('This is an alert!')">alert!</button></li>
+                            <li>A request for information in a pop-up window &nbsp; <button class="button-example" type="button" onclick="console.log(prompt('Please enter your name', 'Harry Potter'))">prompt!</button></li>
+                            <li>A confirmation request in a pop-up window &nbsp;  <button class="button-example" type="button" onclick="confirm('Press a button!');">confirm!</button></li>
+                            <li>A text message in the browser window  <strong>document.write()</strong>&nbsp; <button class="button-example" type="button" onclick="myFunction();">write!</button></li>
+                        </div>
+                        <div>
+                            <pre>
+var person = prompt("Please enter your name", "Harry Potter");
+
+if (person == null || person == "") {
+  txt = "User cancelled the prompt.";
+} else {
+  txt = "Hello " + person + "! How are you today?";
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function myFunction() {
+                    document.open();
+                    document.write("<h1> Hello EPAMers </h1>");
+                    document.close();
+                }
+            </script>
+        </section>
+
+        <!-- Third Slide -->
+        <section class="bg-black-blue fullscreen">
+            <span class="background light" style="background-image:url('https://source.unsplash.com/xREzOtWzDrQ/')"></span>
+            <div class="wrap bg-trans-light">
+                <h1 class="text-landing strong aligncenter">Using Data More Than Once </h1>
+                <br>
+                <h3>Variables</h3>
+                <p>A <strong>variable</strong> is a named space of memory. It is a container that holds a value, which you can then access
+                    repeatedly in your script. Like many other programming languages, JavaScript allows you to declare variables
+                    and use their stored values. The name "variable" is appropriate because the values you store will vary from one variable to the next.
+                    You should also note that a variable's value may change over the course of a script sequence.
+                </p>
+                <h3>Data Types</h3>
+                <p> A data type is a definition of the type of information that a variable holds. JavaScript provides two different
+                    types of data types: <strong>primitive</strong> and <strong>non-primitive</strong>.</p>
+                <div class="wrap size-80" >
+                <img src="https://www.toolsqa.com/wp-content/gallery/javascript/Data-type-in-Javascript-revised.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Forth Slide -->
+        <section>
+            <div class="wrap">
+                <div class="card-50 bg-white">
+                    <figure>
+                        <img src="https://source.unsplash.com/vXInUOv1n84/800x600" alt="Florence, Italy">
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                            Strings
+                        </h2>
+                        <ul class="description">
+                            <li>
+                                <strong class="text-label">string:</strong> Any secuence of alphanumeric characters written in quotes.
+                            </li>
+                            <li><strong class="text-label">example:</strong> var carMake = 'Ford'</li>
+                            <li><strong class="text-label">Website:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">MDN String Documentation</a></li>
+                        </ul>
+                    </div>
+                    <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Third Slide -->
+        <section>
+            <div class="wrap">
+                <div class="card-50 bg-white">
+                    <figure>
+                        <img src="https://source.unsplash.com/4hbJ-eymZ1o/800x600" alt="Florence, Italy">
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                            Numbers
+                        </h2>
+                        <ul class="description">
+                            <li>
+                                <strong class="text-label">Number:</strong> Simple numeric values written with or without decimals;
+                                JavaScript also supports scientific notation for numbers
+                            </li>
+                            <li><strong class="text-label">example:</strong> let age = 212</li>
+                            <li><strong class="text-label">Website:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">MDN String Documentation</a></li>
+                        </ul>
+                    </div>
+                    <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+
+        <!-- Third Slide -->
+        <section>
+            <div class="wrap">
+                <div class="card-50 bg-white">
+                    <figure>
+                        <img src="https://www.webdevelopersnotes.com/wp-content/uploads/joke-false-itss-funny-because-its-true.png" alt="Florence, Italy">
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                            Booleans
+                        </h2>
+                        <ul class="description">
+                            <li>
+                                <strong class="text-label">Boolean:</strong> These variables can have only one of the two values: true or false
+                            </li>
+                            <li><strong class="text-label">example:</strong> let isVisible = true </li>
+                            <li><strong class="text-label">example:</strong> let isChecked = 0 </li>
+                            <li><strong class="text-label">Website:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank">MDN String Documentation</a></li>
+                        </ul>
+                    </div>
+                    <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Third Slide -->
+        <section>
+            <div class="wrap">
+                <div class="card-50 bg-white">
+                    <figure>
+                        <img src="https://miro.medium.com/max/1874/1*0uKJzCv2fgnwEafhXG1nvw.png" alt="Florence, Italy">
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                            null
+                        </h2>
+                        <ul class="description">
+                            <li>
+                                <strong class="text-label">null:</strong> This datatype defines a value that does not exist, it's neither a valid number, string, Boolean, array or object
+                            </li>
+                            <li><strong class="text-label">Website:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null" target="_blank">MDN String Documentation</a></li>
+                        <pre>
+function getVowels(str) {
+  const m = str.match(/[aeiou]/gi);
+  if (m === null) {
+    return 0;
+  }
+  return m.length;
+}
+
+console.log(getVowels('sky'));
+// expected output: 0
+
+                        </pre>
+                        </ul>
+                    </div>
+                    <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+
+        <!-- Third Slide -->
+        <section>
+            <div class="wrap">
+                <div class="card-50 bg-white">
+                    <figure>
+                        <img src="https://miro.medium.com/max/1874/1*0uKJzCv2fgnwEafhXG1nvw.png" alt="Florence, Italy">
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                            undefined
+                        </h2>
+                        <ul class="description">
+                            <li>
+                                <strong class="text-label">undefined:</strong> Whenever a variable is created but no value is assigned to it, it takes the value undefined
+                            </li>
+                            <li><strong class="text-label">Website:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefinded" target="_blank">MDN String Documentation</a></li>
+                            <li><strong class="text-label">example:</strong> let isChecked = 0 </li>
+                            <pre>
+var x;
+x == undefined; //returns true
+x == "undefined"; //returns false
+typeof(x) == "undefined"; //returns true
+
+The typeof() operator returns the value of an undefined character as a string "undefined".
+
+                        </pre>
+                        </ul>
+                    </div>
+                    <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+
+        <!-- Third Slide -->
+        <section>
+            <div class="wrap">
+                <div class="card-50 bg-white">
+                    <figure>
+                        <img src="https://source.unsplash.com/iGLLtLINSkw/" alt="Florence, Italy">
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                            Object
+                        </h2>
+                        <ul class="description">
+                            <li>
+                                <strong class="text-label">Object:</strong> Data structures that have their own methods and properties (values stored in name:value  pairs). Different types of values can be stored in a single object
+                            </li>
+                            <li><strong class="text-label">Website:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer" target="_blank">MDN String Documentation</a></li>
+                            <li><strong class="text-label">example:</strong> let isChecked = 0 </li>
+                            <pre>
+const object1 = { a: 'foo', b: 42, c: {} };
+
+console.log(object1.a);
+// expected output: "foo"
+
+const a = 'foo';
+const b = 42;
+const c = {};
+const object2 = { a: a, b: b, c: c };
+
+console.log(object2.b);
+// expected output: 42
+
+const object3 = { a, b, c };
+
+console.log(object3.a);
+// expected output: "foo"
+
+
+                        </pre>
+                        </ul>
+                    </div>
+                    <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+
+        <!-- Third Slide -->
+        <section>
+            <div class="wrap">
+                <div class="card-50 bg-white">
+                    <figure>
+                        <img src="https://catalin.red/dist/uploads/2019/01/js-array-from-array-like.png" alt="Florence, Italy">
+                    </figure>
+                    <!-- end figure-->
+                    <div class="flex-content">
+                        <h2>
+                            Arrays
+                        </h2>
+                        <ul class="description">
+                            <li>
+                                <strong class="text-label">Arrays:</strong> Special objects that can store more than one value at a time (a list of values).
+                            </li>
+                            <li><strong class="text-label">example:</strong> var names = new Array("Mark", "Pete", "Adam"); // using the new keyword</li>
+                            <li><strong class="text-label">example:</strong> var names = ["Mark", "Pete", "Adam"]</li>
+                            <li><strong class="text-label">Website:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer" target="_blank">MDN String Documentation</a></li>
+                            <pre>
+const object1 = { a: 'foo', b: 42, c: {} };
+
+console.log(object1.a);
+// expected output: "foo"
+
+const a = 'foo';
+const b = 42;
+const c = {};
+const object2 = { a: a, b: b, c: c };
+
+console.log(object2.b);
+// expected output: 42
+
+const object3 = { a, b, c };
+
+console.log(object3.a);
+// expected output: "foo"
+
+
+                        </pre>
+                        </ul>
+                    </div>
+                    <!-- end .flex-content-->
+                </div>
+                <!-- .end .card50 -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+    </article>
+</main>
+<!--main-->
+
+<!-- Required -->
+<script src="../static/js/webslides.js"></script>
+
+<script>
+    window.ws = new WebSlides();
+</script>
+
+<!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+<script defer src="../static/js/svg-icons.js"></script>
+
+</body>
+</html>

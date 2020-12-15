@@ -3792,3 +3792,19 @@ Slides Index
 
 .text-slide-number {
   color: #abc; }
+
+.button-example {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button-example:hover {
+  background-color: lightblue; /* Green */
+}
