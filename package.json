@@ -1,0 +1,21 @@
+{
+  "name": "js-certification",
+  "version": "1.0.0",
+  "description": "A slides based project",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoDeJesus/js-certification.git"
+  },
+  "author": "SET EPAM teams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoDeJesus/js-certification/issues"
+  },
+  "homepage": "https://github.com/MarcoDeJesus/js-certification#readme"
+}
