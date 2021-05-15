@@ -1,0 +1,1288 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>JavaScript Certification - 6th Chapter</title>
+    <meta name="description" content="Program to certify Engineers to JavaScript Language">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://epam.com/" /> <!-- YOUR URL/PERMALINK -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides Documentation: Classes" /> <!-- EDIT -->
+    <meta property="og:description"
+        content="A quick reference guide. This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:23:46"> <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Documentation: Classes"> <!-- EDIT -->
+    <meta name="twitter:description"
+        content="WebSlides Cheat Sheet.This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+</head>
+
+<body>
+    <main role="main">
+        <article id="webslides" class="vertical">
+
+            <!--First Slide -->
+            <section class="bg-black-blue aligncenter">
+                <span class="background dark"
+                    style="background-image:url('https://source.unsplash.com/yW-Qgw_IJXg/')"></span>
+                <!--.wrap = container (width: 90%) with fadein animation -->
+                <div class="wrap">
+                    <h1 class="text-landing strong">The JavaScript Document Object Model (DOM)</h1>
+                    <p class="text-intro"> Chapter Six </p>
+                    <div class="wrap">
+                        <a href="https://www.epam.com" target="_blank"><img class="size-20 aligncenter"
+                                src="../static/images/epam_logo.svg" title="epam website" alt="EPAM logo"></a>STRIVE FOR
+                        EXCELLENCE
+                    </div>
+                </div>
+                <footer>
+                    <div class="wrap">
+                        <p>
+                            <span class="alignleft">
+                                <strong>Created by:</strong> JS Automation SET Practice EPAM Mexico.
+                            </span>
+                        </p>
+                    </div>
+                </footer>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Second Slide -->
+            <section class="bg-black-blue">
+                <span class="background dark"
+                    style="background-image:url('https://source.unsplash.com/LOHVrTsdvzY/')"></span>
+                <div class="wrap">
+                    <h1 class="text-landing strong aligncenter">Document Object Model (DOM) </h1>
+                    <br>
+                    <p class="text-intro">
+                        JavaScript Document Object Model (DOM) are the browser objects which provide properties and
+                        methods to create sophisticated JavaScript programs, as it was designed explicitly for
+                        Webpage use.
+                        <br>
+                        The JavaScript object model divides objects into three general groups: <strong>browser
+                            objects,</strong>
+                        <strong>language objects</strong> and <strong>form field objects</strong>. The following figure
+                        shows a diagram of commonly
+                        used objects recognized by JavaScript.
+                    </p>
+                    <div class="wrap size-50">
+                        <img src="https://s3.amazonaws.com/jigyaasa_content_static/javascript-2.0/ch06/image1.png"
+                            alt="">
+                    </div>
+                    <!-- .end .wrap -->
+            </section>
+
+            <!-- Third Slide -->
+            <section class="bg-black-blue">
+                <span class="background dark"
+                    style="background-image:url('https://source.unsplash.com/LOHVrTsdvzY/')"></span>
+                <div class="wrap">
+                    <h2 class="text-landing strong aligncenter">Challenges</h2>
+                    <br>
+                    <p class="text-intro">
+                        Neither major browser supports all the objects shown in the figure, nor
+                        do they always support the same objects in the same manner. These compatibility issues pose a
+                        serious concern to JavaScript developers.
+                        <br>
+                        <br>
+                        One of the challenges in creating effective JavaScript-enabled Web applications is overcoming
+                        compatibility issues between the major browsers
+                    </p>
+                    <div class="wrap size-50">
+                        <img src="https://1.bp.blogspot.com/-q8PytfYcbg8/Ty7eOLtALtI/AAAAAAAAFI8/ykMOUcs_f48/s200/Chrome+logo.png"
+                            alt="" width="150" height="150">
+                        <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-lg-high-res.fbc7ffbb50fd.png"
+                            alt="" width="150" height="150">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4nqTh"
+                            alt="" width="150" height="150">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/1028px-Safari_browser_logo.svg.png"
+                            alt="" width="150" height="150">
+                    </div>
+                    <!-- .end .wrap -->
+            </section>
+
+            <!-- Fourth Slide -->
+            <section>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h3><strong>Containership</strong></h3>
+                            <p class="text-intro">Containership relates to the principle that some objects cannot
+                                be used or referenced without a reference to the parent (container) object.
+                            </p>
+                        </div>
+                        <!-- .end .column -->
+                        <div class="column">
+                            <pre><code>
+            &lt;script type="text/javascript"&gt;
+            <span class="code-comment">//&lt;!--</span>
+                function containership() 
+                {
+                    var checkbox = document.myForm.chkTennis;
+                }
+            <span class="code-comment">// --&gt;</span>
+            &lt;/script&gt;
+            
+            &lt;body&gt;
+                &lt;form <strong>name="myForm"</strong>&gt;
+                    &lt;input type="checkbox" <strong>name="chkTennis"</strong>&gt;
+                    &lt;label for="chkTennis"&gt;
+                &lt;/form&gt;
+            &lt;/body&gt;
+                                </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fifth Slide -->
+            <section class="bg-gradient-gray">
+                <div class="wrap">
+                    <h2 class="aligncenter">The window Object - Properties </h2>
+                    <p class="aligncenter">The <code>window</code> object is the highest-level object in the JavaScript
+                        object hierarchy and is also the default object. Properties associated with the
+                        <code>window</code> object
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>closed</code></td>
+                                <td>Returns a Boolean value indicating whether a window is open or closed</td>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td><code>defaultStatus</code></td>
+                                <td>Specifies or returns a string value containing the default status bar text</td>
+                            </tr>
+                            <tr>
+                                <td><code>frames</code></td>
+                                <td> Returns an array that tracks the number of frames in a window. You can target a
+                                    frame in JavaScript by referencing its frame number in the <code>frames</code> array
+                                    <br>
+                                    Note: Frames are no longer commonly used on the Web
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>length</code></td>
+                                <td>Returns an integer value representing the number of frames in the parent window.
+                                    Also, returns the number of elements in the <code>window.frames</code> array
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>location</code></td>
+                                <td>Specifies or returns the <code>location</code> object for the current window</td>
+                            </tr>
+                            <tr>
+                                <td><code>name</code></td>
+                                <td>Specifies or returns a string value containing the name of the window or frame</td>
+                            </tr>
+                            <tr>
+                                <td><code>opener</code></td>
+                                <td>Returns a reference to the window that called (or opened) the current window</td>
+                            </tr>
+                            <tr>
+                                <td><code>parent</code></td>
+                                <td>Returns a string value containing the name of the parent window, if it has one</td>
+                            </tr>
+                            <tr>
+                                <td><code>self</code></td>
+                                <td>Returns a string value containing the name of the current window. Alternative for
+                                    using the <code>name</code> property as previously described</td>
+                            </tr>
+                            <tr>
+                                <td><code>status</code></td>
+                                <td>Specifies or returns a string value representing the status bar text</td>
+                            </tr>
+                            <tr>
+                                <td><code>top</code></td>
+                                <td>Returns a string value containing the name of the topmost window</td>
+                            </tr>
+                            <tr>
+                                <td><code>window</code></td>
+                                <td>An alternative for the <code>self</code> or <code>name</code> property</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Sixth Slide -->
+            <section class="bg-gradient-gray">
+                <div class="wrap">
+                    <h2 class="aligncenter">The window Object - Methods </h2>
+                    <p class="aligncenter">Methods associated with the <code>window</code> object.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>alert(<i>"message text"</i>)</code></td>
+                                <td>Creates a dialog box with <code><i>message text</i></code> as the message</td>
+                            </tr>
+                            <tr>
+                                <td><code>close()</code></td>
+                                <td>Closes the current window
+                                    You must write <code>window.close()</code> to ensure that this command is associated
+                                    with a window object, and not some other JavaScript object.</td>
+                            </tr>
+                            <tr>
+                                <td><code>confirm(<i>"message text"</i>)</code></td>
+                                <td> <i>Creates a dialog box with message text</i> displayed, along with OK and Cancel
+                                    buttons</td>
+                            </tr>
+                            <tr>
+                                <td><code>moveBy(x, y)
+                                    <br>
+                                    moveTo(x, y)</code></td>
+                                <td>The<code>moveBy()</code> method moves a window by x pixels on the x-axis and by y
+                                    pixels on the y-axis.
+                                    <br>
+                                    The <code>moveTo()</code> method moves the top-left corner of a window to the
+                                    specified position on the x-axis and y-axis.
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>open(<i>"URL","name", "featureList"</i>)</code></td>
+                                <td>Opens a new window, populated by <code><i>URL</i></code>, with the target name of
+                                    <code><i>name</i></code>, and with the features identified in
+                                    <code><i>featureList</i></code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>print()</code></td>
+                                <td>Provides a script method for printing the contents of the current window and frame
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>prompt(<i>"message text","default text"</i>)</code></td>
+                                <td>Pops up a message box displaying <code><i>message text</i></code> with a text box
+                                    for the user's response, which contains default text if not left empty. In some
+                                    browsers, the word <code><i>undefined</i></code> displays in the text box if left
+                                    empty.</td>
+                            </tr>
+                            <tr>
+                                <td><code>resizeBy(x, y)
+                                    <br>
+                                    resizeTo(outerHeight, outerWidth)</code></td>
+                                <td>The <code>resizeBy()</code> method resizes a window by the specified x and y offsets
+                                    along the x-axis and y-axis.
+                                    <br>
+                                    The <code>resizeTo()</code> method resizes a window to the height and width
+                                    specified by outerHeight and outerWidth.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Seventh Slide -->
+            <section class="bg-gradient-gray">
+                <div class="wrap">
+                    <h2 class="aligncenter">The window Object - Methods Part 2</h2>
+                    <p class="aligncenter">Methods associated with the <code>window</code> object.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>scrollBy(x, y)
+                                    <br>
+                                    scrollTo(x, y)</code></td>
+                                <td>The <code>scrollBy()</code> method scrolls the document in a window by the specified
+                                    x and y offsets along the x-axis and y-axis.
+                                    <br>
+                                    The <code>scrollTo()</code> method scrolls the document in a window to the specified
+                                    position on the x-axis and y-axis.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>setTimeout(<i>"expression", time</i>)
+                                    <br>
+                                    setTimeout(<i>functionName, time</i>)</code></td>
+                                <td>Executes <code><i>expression</i></code> or <code><i>functionName</i></code> after an
+                                    elapse of the interval <code><i>time</i></code>, an integer value representing
+                                    milliseconds</td>
+                            </tr>
+                            <tr>
+                                <td><code>clearTimeout(timerID)</code></td>
+                                <td> If the <code>setTimeout</code> to which this refers were given a
+                                    <code><i>timerID</i></code>, this method would clear the timeout so that the related
+                                    procedure would not run again when the next specified interval elapsed.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>blur()</code></td>
+                                <td>Causes the window to lose focus. The window is placed beneath any other open windows
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>focus()</code></td>
+                                <td>Causes the window to gain focus. The window is placed on top of any other open
+                                    windows
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Eight Slide -->
+            <section class="bg-gradient-gray">
+                <div class="wrap">
+                    <h2 class="aligncenter">The window Object - Event Handlers</h2>
+                    <p class="aligncenter">The following table lists commonly used event handlers associated with the
+                        <code>window</code> object. Remember that event handlers no longer use camelCase (e.g.,
+                        <code>onLoad</code>) if you want them to validate to HTML standards; they should be all
+                        lowercase (e.g., <code>onload</code>).
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Event Handler</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>onerror</code></td>
+                                <td>Processes when a JavaScript error occurs
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>onload</code></td>
+                                <td>Processes when the window or frame finishes loading</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Ninth  Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="card-50 bg-white">
+                        <figure>
+                            <img src="https://source.unsplash.com/lllhioZ4tlc" alt="">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                <code>window</code> object's <code>open()</code> method
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    <strong class="text-label"><code>open()</code>:</strong>You can launch a new window
+                                    displaying an existing Webpage, or you can launch an empty window and then populate
+                                    it dynamically.
+                                </li>
+                                <li><strong
+                                        class="text-label">Syntax:</strong><code>open("URL","WindowName","Feature List")</code>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Tenth Slide -->
+            <section class="bg-gradient-gray">
+                <div class="wrap">
+                    <h2 class="aligncenter"><code>window</code> attributes accesible in the <code>open()</code> method
+                    </h2>
+                    <p class="aligncenter">The feature list consists of a series of attributes that you specify to
+                        either be displayed or not. The accepted values for each attribute are 1 or yes if the attribute
+                        is to be displayed, and 0 or no if it is not.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>toolbar</code></td>
+                                <td>Creates the standard toolbar, IE and Firefox only</td>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td><code>location</code></td>
+                                <td>Creates the Location entry field, Opera only</td>
+                            </tr>
+                            <tr>
+                                <td><code>status</code></td>
+                                <td>Creates the status bar</td>
+                            </tr>
+                            <tr>
+                                <td><code>menubar</code></td>
+                                <td>Creates the menu at the top of the window</td>
+                            </tr>
+                            <tr>
+                                <td><code>scrollbars</code></td>
+                                <td>Creates scroll bars when the document grows beyond the current window, IE, Firefox,
+                                    and Opera only</td>
+                            </tr>
+                            <tr>
+                                <td><code>resizable</code></td>
+                                <td>Enables resizing of the window by the user, IE only</td>
+                            </tr>
+                            <tr>
+                                <td><code>width</code></td>
+                                <td>Specifies the window width in pixels</td>
+                            </tr>
+                            <tr>
+                                <td><code>height</code></td>
+                                <td>Specifies the window height in pixels</td>
+                            </tr>
+                            <tr>
+                                <td><code>top</code></td>
+                                <td>Specifies the top y coordinate onscreen where the window will open. Available in
+                                    Microsoft Edge and Mozilla Firefox 1.x (and later); older browsers do not recognize
+                                    it</td>
+                            </tr>
+                            <tr>
+                                <td><code>left</code></td>
+                                <td>Specifies the left x coordinate onscreen where the window will open. Available in
+                                    Microsoft Edge and Mozilla Firefox 1.x (and later); older browsers do not recognize
+                                    it</td>
+                            </tr>
+                            <tr>
+                                <td><code>fullscreen</code></td>
+                                <td>Specifies whether the browser is to be displayed in full-screen mode or not</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!--Eleventh Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column-40">
+                            <h3><strong>Dynamic window</strong></h3>
+                            <p class="text-intro">In some cases, you may need to open a new window and supply its
+                                content dynamically. In such cases, you must acquire a reference to the new window. The
+                                following example demonstrates the use of the <code>open()</code> method for such
+                                situations:</p>
+                        </div>
+                        <div class="column">
+                            <pre>
+var newWindow;
+newWindow = open("","dynamicWindow","toolbar=1,location=1");
+newWindow.document.open();
+newWindow.document.write("<p><strong>Some text for the new window.</strong></p>");
+newWindow.document.close();
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Twelfth Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="card-50 bg-white">
+                        <figure>
+                            <img src="https://content.codecademy.com/courses/learn-javascript-objects/object%20dot%20notation.svg"
+                                alt="">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                Dot notation revisited
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    <strong class="text-label">Dot notation:</strong> dot notation is used to associate
+                                    an object's name with the object's properties or methods. Some objects are
+                                    themselves properties of a higher object. Dot notation is also used to depict this
+                                    hierarchy
+                                </li>
+                                <pre>
+objectName.objectProperty;
+objectName.objectProperty = value;
+
+objectName.objectMethod();
+objectName.objectMethod(argument1,argument2,...);
+
+parentObjectName.objectName.objectProperty;
+parentObjectName.objectName.objectMethod();
+                        </pre>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Thirdteenth Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="card-50 bg-white">
+                        <figure>
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                The <code>onmouseover && onmouseout</code> event handlers
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    <strong class="text-label">onmouseover && onmouseout:</strong> As mentioned earlier,
+                                    inline scripting is often used to manipulate the status property of the window
+                                    object. This approach is common when using the onmouseover and onmouseout event
+                                    handlers.
+                                </li>
+                                <pre>
+&lt;script&gt;
+function onOver() {
+ /* The style object is used to access the style element of a page. Styles can
+ be added as: object.style.property = value */
+ document.getElementById("sample").style.fontSize = "40px";
+}
+function onOut() {
+ document.getElementById("sample").style.fontSize = "20px";
+}
+&lt;/script&gt;
+&lt;a&gt; href="https://www.CIWcertified.com"
+onmouseover="onOver()" onmouseout="onOut()" id="sample" >Visit CIW&lt;/a&gt;
+                                    </pre>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!--Fourteenth Slide -->
+            <section class="bg-blue">
+                <div class="wrap">
+                    <div class="card-50 bg-blue">
+                        <figure>
+                            <img src="https://source.unsplash.com/OQMZwNd3ThU">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                The <code>document</code> object
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    The <code>document</code> object is subordinate to the <code>window</code> object in
+                                    the JavaScript hierarchy.
+                                </li>
+                                <li>It provides the properties and methods to work with many aspects of
+                                    the current document, including text, forms, links, page title, and current location
+                                    and URL</li>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Fifteenth Slide -->
+            <section class="bg-gradient-r">
+                <div class="wrap">
+                    <h2 class="aligncenter">The document object - Properties </h2>
+                    <p class="aligncenter">Following tables describes commonly used properties associated with the
+                        <code>document</code> object.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>anchors</code></td>
+                                <td>Returns an array containing a list of all anchors in the document</td>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td><code>body</code></td>
+                                <td>Returns the body element of the document</td>
+                            </tr>
+                            <tr>
+                                <td><code>cookie</code></td>
+                                <td>Returns the cookie of the document</td>
+                            </tr>
+                            <tr>
+                                <td><code>doctype</code></td>
+                                <td>Returns the document's doctype</td>
+                            </tr>
+                            <tr>
+                                <td><code>documentElement</code></td>
+                                <td>Returns the &lt;html&gt; element in the document</td>
+                            </tr>
+                            <tr>
+                                <td><code>forms</code></td>
+                                <td>Returns an array containing references to each form in the document. A form object
+                                    can also be referenced by name, via the <code>name</code> attribute of the
+                                    &lt;form&gt; tag.
+                                    <br>
+                                    Note that form elements are contained within the form object.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>images</code></td>
+                                <td>Returns an array containing references to all &lt;img&gt; tags in the document</td>
+                            </tr>
+                            <tr>
+                                <td><code>lastModified</code></td>
+                                <td>Returns a string value representing the date and time that the document was last
+                                    changed
+                                    <br>
+                                    <i>Note: The appearance of this string is inconsistent among browsers. Also, the
+                                        availability of this property may be dependent upon server configuration.</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>referrer</code></td>
+                                <td>Returns a string value representing the URL of the document from which the current
+                                    document was accessed. Note that <code>document.referrer</code> only returns a value
+                                    if the user arrives at the current page via an HTTP link</td>
+                            </tr>
+                            <tr>
+                                <td><code>scripts</code></td>
+                                <td>Returns all the &lt;script&gt; elements in the document</td>
+                            </tr>
+                            <tr>
+                                <td><code>title</code></td>
+                                <td>Specifies or returns a string value representing the text between the &lt;title&gt;
+                                    and &lt;/title&gt; tags</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Sixteenth Slide -->
+            <section class="bg-gradient-r">
+                <div class="wrap">
+                    <h2 class="aligncenter">The document object - Methods </h2>
+                    <p class="aligncenter">Following tables describes commonly used methods associated with the
+                        <code>document</code> object.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>close()</code></td>
+                                <td>Closes a <code>write</code> stream</td>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td><code>createElement(name)</code></td>
+                                <td>Creates the HTML element specified by <code>name</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>getElementById(id)</code></td>
+                                <td>Returns a reference to the element specified by its <code>id</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>getElementByClassName</code></td>
+                                <td>Returns a list of elements with the given <code>class</code> name</td>
+                            </tr>
+                            <tr>
+                                <td><code>getElementByTagName(name)</code></td>
+                                <td>Returns a live list of elements with the given <code>name</code> (live list means
+                                    that the list keeps updating itself with the DOM tree automatically)</td>
+                            </tr>
+                            <tr>
+                                <td><code>open()</code></td>
+                                <td>Opens the document to receive data from a <code>write()</code> stream</td>
+                            </tr>
+                            <tr>
+                                <td><code>write(content)</code></td>
+                                <td>Writes the value of <code><i>content</i></code> to the document</td>
+                            </tr>
+                            <tr>
+                                <td><code>writeln(content)</code></td>
+                                <td>Writes the value of <code><i>content</i></code> to the document, followed by a
+                                    carriage return. Unless this command occurs within a &lt;pre&gt; block of
+                                    preformatted text, you will see no difference between this method and the
+                                    <code>write()</code> method.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!--Seventeenth Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="card-50 bg-black-blue">
+                        <figure>
+                            <img src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                The <code>image</code> object
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    The <code>image</code> object resides beneath the <code>document</code> object in
+                                    the JavaScript hierarchy.
+                                </li>
+                                <li>This object allows you to manipulate images in recent versions of all the major
+                                    browsers.</li>
+                                <li> Images can be accesed through array index and changed by inline scripting by array
+                                    number or by name.
+                                    <pre>
+document.images[0].src = newImage.jpg; <span class="code-comment">// images array standard syntax</span>
+&lt;input  type="button" value="Change image" onclick="document.images[0].src='/images/myImage.gif';" /&gt; <span class="code-comment">// Inline scripting by array number</span>
+&lt;img src="myPicture.gif" name="myImage" /&gt;
+&lt;input type="button" value="Change image"
+onclick="document.images['myImage'].src='newImage.gif';" /&gt; <span class="code-comment">// Inline scripting by name</span>
+                                    </pre>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Eighteenth Slide -->
+            <section class="bg-black-blue">
+                <div class="wrap">
+                    <h2 class="aligncenter">The image object - Properties </h2>
+                    <p class="aligncenter">Following tables describes commonly used properties associated with the
+                        <code>image</code> object. The <code>image</code> object has no built-in methods.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>src</code></td>
+                                <td>Specifies or returns the URL of the image file. This parameter is the only one
+                                    required. Following is an example of this format:
+                                    <br>
+                                    <code>document.images[0].src = "http://www.yoursite.com/images/comp1.gif";</code>
+                                </td>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td><code>height and width</code></td>
+                                <td> Specifies or returns the height and width of the image in pixels. Although this
+                                    parameter is not required, you should use it at all times.</td>
+                            </tr>
+                            <tr>
+                                <td><code>length</code></td>
+                                <td>Returns the number of images for a document. You can access this property using the
+                                    following syntax:
+                                    <br>
+                                    <code>document.images.length;</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>complete</code></td>
+                                <td>Returns a Boolean value indicating whether the image has loaded completely.</td>
+                            </tr>
+                            <tr>
+                                <td><code>naturalHeight</code> and <code>naturalWidth</code></td>
+                                <td>Returns the original height and width of an image</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Nineteenth Slide -->
+            <section class="bg-black-blue">
+                <div class="wrap">
+                    <h2 class="aligncenter">The image object - Event handlers </h2>
+                    <p class="aligncenter">Following tables lists commonly used event handlers of the
+                        <code>image</code> object. The <code>image</code> object has no built-in methods.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Event Handler</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>onabort</code></td>
+                                <td>Processes if the user selects the Stop button while an image is loading (IE/Edge
+                                    only)
+                                </td>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td><code>onerror</code></td>
+                                <td>Processes if an error occurs while an image is loading</td>
+                            </tr>
+                            <tr>
+                                <td><code>onload</code></td>
+                                <td>Processes either when an image's <code>lowsrc</code> image finishes loading, when an
+                                    image's src finishes loading, or when each frame of an animated GIF appears
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-info">
+                        <strong>Handling image object events</strong>
+                        <br>
+                        In many applications, the &lt;a&gt; tag is used in conjunction with images to handle events. The
+                        &lt;a&gt; tag supports such event handlers as onclick, onmouseout and onmouseover.
+                    </p>
+                </div>
+            </section>
+
+            <!--Twentieth Slide -->
+            <section class="bg-trans-dark">
+                <div class="wrap">
+                    <div class="card-50 bg-white">
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyyxzJOk_yPBfBNH-SRZ_4qhntuc45T_aOuQ&usqp=CAU">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                The <code>history</code> object
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    The <code>history</code> object is subordinate to the <code>window</code> object in
+                                    the JavaScript hierarchy.
+                                </li>
+                                <li>You have already been using the same information used by the history object when you
+                                    click the Back or Forward buttons on your browser. The browser maintains a list of
+                                    recently visited Webpage URLs.</li>
+                                <li> To access the previous pages visited, you can use the history object with the
+                                    back() and forward() methods. The syntax is as follows:
+                                    <pre>
+&lt;form&gt;
+    &lt;input type="button" value="Back" onclick = "history.back();" /&gt;
+                                            
+    &lt;input type="button" value="Forward"
+    onclick = "history.forward();" /&gt;
+&lt;/form&gt;
+</pre>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+
+
+
+            <!-- Twentieth First Slide -->
+            <section class="bg-black">
+                <div class="wrap">
+                    <h2 class="aligncenter">The history object - Properties and methods </h2>
+                    <p class="aligncenter">The history object has only one property associated with it, and five
+                        methods.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><code>length</code></td>
+                            <td>Returns an integer value representing the number of links currently referenced by the
+                                history object
+                            </td>
+                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>back()</code></td>
+                                <td>Sends the user to the previous page in the history list</td>
+                            </tr>
+                            <tr>
+                                <td><code>forward()</code></td>
+                                <td>Sends the user to the subsequent page in the history list
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>go(x)</code></td>
+                                <td>If x is a negative integer, the user will be sent back x number of pages in the
+                                    history list. If x is a positive integer, the user will be sent forward x number of
+                                    pages in the history list. If x is a string value, the user will be sent to the page
+                                    in the history list with a URL matching x.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>pushState()</code></td>
+                                <td>Creates a new history entry
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>replaceState()</code></td>
+                                <td>Modifies an existing history entry
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!--Twentieth Second Slide -->
+            <section class="bg-light">
+                <div class="wrap">
+                    <div class="card-50 bg-light">
+                        <figure>
+                            <img src="https://redfibra.mx/wp-content/uploads/DOMINIO-1.jpg">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                The <code>location</code> object
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    The <code>location</code> object is subordinate to the <code>window</code> object in
+                                    the JavaScript hierarchy.
+                                </li>
+                                <li>The location object allows you to specify URLs in a script.</li>
+                                <li>The key property of the location object you will frequently use is the href
+                                    property, which specifies or returns the hypertext reference for the current or
+                                    desired URL.</li>
+                                <li>
+                                    <pre>
+            &lt;form&gt;
+                &lt;input type="button" value="Visit CIW"
+                onclick="location.href = 'http://www.CIWcertified.com';" /&gt;
+            &lt;/form&gt;
+
+            protocol://hostname:port/pathname/search#hash <span class="code-comment">// URL Protocol</span>
+            </pre>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Twentieth Third Slide -->
+            <section class="bg-light">
+                <div class="wrap">
+                    <h2 class="aligncenter">The location object - Properties</h2>
+                    <p class="aligncenter">The location object has the following methods.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>href</code></td>
+                                <td>Specifies or returns the partial or full URL of a file or site. For example:
+                                    <code>http://www.cnn.com</code> or <code>page2.htm</code> or
+                                    <code>page2.htm#Section2</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>protocol</code></td>
+                                <td>Specifies or returns HTTP, FTP or the protocol currently in use</td>
+                            </tr>
+                            <tr>
+                                <td><code>host</code></td>
+                                <td>Specifies or returns the <code><i>hostname:port</i></code> portion of the URL</td>
+                            </tr>
+                            <tr>
+                                <td><code>hostname</code></td>
+                                <td>Specifies or returns the <i>host</i> name of the URL</td>
+                            </tr>
+                            <tr>
+                                <td><code>port</code></td>
+                                <td>Specifies or returns the port number used for access (if one is provided)</td>
+                            </tr>
+                            <tr>
+                                <td><code>pathname</code></td>
+                                <td>Specifies or returns the path to a file</td>
+                            </tr>
+                            <tr>
+                                <td><code>search</code></td>
+                                <td>Specifies or returns the text following the ? character (if a search string is
+                                    present)</td>
+                            </tr>
+                            <tr>
+                                <td><code>hash</code></td>
+                                <td>Specifies or returns the internal link anchor name, which follows the hash symbol
+                                    (#) in the URL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!--Twentieth Fourth Slide -->
+            <section class="bg-trans-dark">
+                <div class="wrap">
+                    <div class="card-50 bg-trans-dark">
+                        <figure>
+                            <img src="https://cdn2.iconfinder.com/data/icons/rafif-rounded-flat-vol-2/512/plus-512.png">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                The <code>navigator</code> object
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    Reflects information about the browser being used. This object can determine the
+                                    brand and version of the browser in use, and even identify the user's operating
+                                    system.
+                                </li>
+                                <li>
+                                    <pre>
+var userBrowser = navigator.appName;
+                        </pre>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Twentieth Fifth Slide -->
+            <section class="bg-black">
+                <div class="wrap">
+                    <h2 class="aligncenter">The navigator object - Properties and methods</h2>
+                    <p class="aligncenter">The navigator object has seven properties associated with it, and only one
+                        method.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><code>appCodeName</code></td>
+                            <td>Returns a string value containing the code name for the client. This property returns
+                                the default <code>Mozilla</code> for the Mozilla browsers and also for Microsoft Edge
+                                and Google Chrome.
+                            </td>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td><code>appName</code></td>
+                                <td>Returns a string value containing the name of the client (i.e.,
+                                    <code>Netscape</code> for the Mozilla browsers and
+                                    <code>Microsoft Internet Explorer</code> for the Internet Explorer browsers)</td>
+                            </tr>
+                            <tr>
+                                <td><code>appVersion</code></td>
+                                <td>Returns a string value containing the version information for the client
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>mimeTypes</code></td>
+                                <td>Returns an array representing all the MIME types supported by the client
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>platform</code></td>
+                                <td>Returns a string that identifies the operating system for which the browser was
+                                    compiled
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>plugins</code></td>
+                                <td>Returns an array representing all the plug-ins installed on a particular browser
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>userAgent</code></td>
+                                <td>Returns a string value containing the complete value of the user-agent header sent
+                                    in the HTTP request
+                                </td>
+                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td><code>javaEnabled()</code></td>
+                                <td>Returns true if Java is enabled by the client; otherwise returns false
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="bg-black-blue aligncenter">
+                <span class="background dark"
+                    style="background-image:url('https://miro.medium.com/max/3600/1*HSisLuifMO6KbLfPOKtLow.jpeg')"></span>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap size-50">
+                    <h1 class="aligncenter"> Virtual DOM</h1>
+                    <h3 class="aligncenter text-intro">A virtual DOM object is a DOM object with limited capabilities. Virtual DOM objects are lightweight copies of real DOM objects that are unable to make changes to the page itself.</h3>
+                    <hr>
+                    <div class="bg-white shadow">
+                        <ul class="flexblock reasons">
+                            <li>
+                                <p><strong>Advantages and disavantages of Virtual DOM: </strong>Every time a DOM changes 
+                                    the layout, this requires a lot of work from the browser. It must re-read the CSS, 
+                                    change the layout, and rebuild the page. With the virtual DOM there is no longer a need 
+                                    to update each element when the layout of the DOM changes. Also, rendering the virtual DOM 
+                                    is a lot faster than rendering actual browser DOM. React, a popular JavaScript library, uses 
+                                    the virtual DOM, making pages created with React much more efficient than pages created without 
+                                    the virtual DOM. </p>
+                            </li>
+                            <li>
+                                <p><strong>Common implementation of virtual DOM:</strong> Maquette, marko and cito.js are some of the 
+                                    many JavaScript frameworks that use virtual DOM libraries at their core. Maquette enables users to 
+                                    control the UI using plain JavaScript, making it easy to learn and debug.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .end bg-white.shadow -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Slide -->
+            <section class=" aligncenter">
+                <span class="background dark"
+                    style="background-image:url('https://source.unsplash.com/49uySSA678U/')"></span>
+                <div class="wrap">
+                    <h1 class="text-landing text-shadow">Questions?</h1>
+                </div>
+
+
+
+
+        </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+
+    <script>
+        window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+
+</body>
+
+</html>

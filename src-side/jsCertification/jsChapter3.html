@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>JavaScript Certification - 3rd Chapter</title>
+    <meta name="description" content="Program to certify Engineers to JavaScript Language">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://epam.com/" /> <!-- YOUR URL/PERMALINK -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides Documentation: Classes" /> <!-- EDIT -->
+    <meta property="og:description"
+        content="A quick reference guide. This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:23:46"> <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Documentation: Classes"> <!-- EDIT -->
+    <meta name="twitter:description"
+        content="WebSlides Cheat Sheet.This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+</head>
+
+<body>
+    <main role="main">
+        <article id="webslides" class="vertical">
+
+            <!-- Slide -->
+            <section class="bg-black-blue aligncenter">
+                <span class="background dark"
+                    style="background-image:url('https://source.unsplash.com/oQuP_XBjOMY/')"></span>
+                <!--.wrap = container (width: 90%) with fadein animation -->
+                <div class="wrap">
+                    <h1 class="text-landing strong">Functions, Methods and Events in JavaScript</h1>
+                    <p class="text-intro"> Chapter Three </p>
+                    <div class="wrap">
+                        <a href="https://www.epam.com" target="_blank"><img class="size-20 aligncenter"
+                                src="../static/images/epam_logo.svg" title="epam website" alt="EPAM logo"></a>STRIVE FOR
+                        EXCELLENCE
+                    </div>
+                </div>
+                <footer>
+                    <div class="wrap">
+                        <p>
+                            <span class="alignleft">
+                                <strong>Created by:</strong> JS Automation SET Practice EPAM Mexico.
+                            </span>
+                        </p>
+                    </div>
+                </footer>
+                <!-- .end .wrap -->
+            </section>
+
+            <section>
+                <div class="wrap">
+                    <!-- [class*="content-"] = container max-width:50% = 600px -->
+                    <div class="content-center">
+                        <h3>Functions</h3>
+                        <ul class="flexblock specs">
+                            <li>
+                                <div>
+                                    <h2>
+                                        <svg class="fa-code">
+                                            <use xlink:href="#fa-code"></use>
+                                        </svg>
+                                        Organized block of code
+                                    </h2>
+                                    Handles actions generated by user events.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h2>
+                                        <svg class="fa-long-arrow-right">
+                                            <use xlink:href="#fa-long-arrow-right"></use>
+                                        </svg>
+                                        Return function results
+                                    </h2>
+                                    A value will return either to the screen, to a variable, or to another function.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h2>
+                                        <svg class="fa-code">
+                                            <use xlink:href="#fa-code"></use>
+                                        </svg>
+                                        Built-in functions
+                                    </h2>
+                                    To improve your program's efficiency and readability.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h2>
+                                        <svg class="fa-plus">
+                                            <use xlink:href="#fa-plus"></use>
+                                        </svg>
+                                        and many more!
+                                    </h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end .content-center -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="card-30 bg-white">
+                        <figure>
+                            <img src="https://source.unsplash.com/P2SkP_PXhlU">
+                        </figure>
+                        <!-- end figure-->
+                        <div class="flex-content">
+                            <h2>
+                                Define a function
+                            </h2>
+                            <ul class="description">
+                                <li>
+                                    Encompass a group of script statements into a function block.
+                                </li>
+                                <li><strong class="text-label">Keyword:</strong> function</li>
+                                <li><strong class="text-label">Enclosing:</strong> The rest of the statements that form
+                                    the function must be enclosed in curly brace { } characters.</li>
+                                <li><strong>Generic syntax:</strong></li>
+                                <pre>
+function functionName(argument1, argument2, ...) 
+{
+    <span class="code-comment">//statement(s) here</span>
+}
+                        </pre>
+                            </ul>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap size-60">
+                    <h3><strong>More definition rules</strong></h3>
+                    <hr>
+                    <div class="bg-white shadow">
+                        <ul class="flexblock reasons">
+                            <li>
+                                <h2>Function name</h2>
+                                <p>Must begin with a letter, underscore or dollar sign character.</p>
+                            </li>
+                            <li>
+                                <h2>Parentheses</h2>
+                                <p>Must follow the user-defined function name. These parentheses are used to receive
+                                    arguments whether they exist or not.</p>
+                            </li>
+                            <li>
+                                <h2>Arguments</h2>
+                                <p>Data that the function receives and manipulates within the function.</p>
+                            </li>
+                        </ul>
+                    </div> <!-- .end .bg-white shadow -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h3><strong>Calling a function</strong></h3>
+                            <p class="text-intro">From one function to another, from a user event, or from a separate
+                                <code>&lt;script&gt;</code> block. </p>
+                            <p>In this example, the function <strong>welcomeHome()</strong> is called using the
+                                <strong>onload</strong> event handler.</p>
+                        </div>
+                        <!-- .end .column -->
+                        <div class="column">
+                            <pre><code>
+&lt;script type="text/javascript"&gt;
+<span class="code-comment">//&lt;!--</span>
+    function welcomeHome(message) 
+    {
+        alert(message);
+    }
+<span class="code-comment">// --&gt;</span>
+&lt;/script&gt;
+
+&lt;body <strong> onload="welcomeHome("Welcome to this course");</strong>"&gt;
+                    </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h3><strong>Passing arguments to functions</strong></h3>
+                            <p class="text-intro">Arguments, or parameters, are values passed into a function from
+                                outside the function. </p>
+                            <p>These values are then used inside the function and <strong>discarded</strong> after the
+                                function has completed its statements.</p>
+                        </div>
+                        <div class="column">
+                            <pre>
+function showName(firstName, lastName) 
+{
+    document.writeln("Your first name is:" + firstName);
+    document.writeln("Your last name is:" + lastName);
+}
+                    </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h3><strong>Returning values</strong></h3>
+                            <p class="text-intro">JavaScript functions can return values to the calling statement using
+                                the return statement.<br>
+                                <strong class="text-label">Keyword:</strong>return</p>
+                            <p>The value that is returned can be assigned to a variable or it can be used in an
+                                expression.</p>
+                        </div>
+                        <div class="column">
+                            <pre>
+function sum(value1, value2) {
+    return value1 + value2;
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="fullscreen bg-white">
+                <div class="flex-content">
+                    <h2><strong>Operator precedence</strong></h2>
+                    <p class="text-intro">Determines which expressions will be evaluated before others
+                    </p>
+                    <p>Consider the expression 4 + 6 * 2, for example. JavaScript follows mathematical
+                        precedence, so multiplication takes precedence over addition, and thus the
+                        expression would evaluate to 16. </p>
+                </div>
+                <div class="wrap size-40">
+                    <figure>
+                        <img src="https://slideplayer.com/slide/7883967/25/images/8/Arithmetic+Operators+Rules+of+Operator+Precedence.jpg"
+                            alt="Numbers">
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Slide-->
+            <section class="bg-gradient-h">
+                <span class="bg-trans-dark"
+                    style="background-image:url('https://source.unsplash.com/IQ2a48CrN7E/1440x1440')"></span>
+                <div class="wrap size-60">
+                    <h1>LOCAL VARIABLES</h1>
+                    <h4>If you declare a variable within a function definition, the only way you can access or change it
+                        is from within that function.</h4><br><br>
+                    <h5>Cannot access its value from any other function except the one in which it was declared.</h5>
+                </div>
+            </section>
+
+            <!-- Slide-->
+            <section class="bg-gradient-r">
+                <span class="bg-trans-dark"
+                    style="background-image:url('https://source.unsplash.com/IQ2a48CrN7E/1440x1440')"></span>
+                <div class="wrap size-60">
+                    <h1>GLOBAL VARIABLES</h1>
+                    <h4>These need to be declared outside of any function definition, usually at the start of your
+                        script.</h4><br><br>
+                    <h5>If you declare a global variable, you can then access its value from any function or script
+                        block on that page.</h5>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Second Slide -->
+            <section class="bg-black-blue">
+                <span class="background dark"
+                    style="background-image:url('https://source.unsplash.com/WkfDrhxDMC8/')"></span>
+                <div class="wrap">
+                    <h1 class="text-landing strong aligncenter">Built-in functions</h1>
+                    <br>
+                    <p class="text-intro">
+                        In JavaScript, you can use built-in functions to manipulate object properties or to perform
+                        calculations.
+                        <br>
+                        In some programming languages, methods and functions are two different operations. However,
+                        methods and functions are interchangeable in JavaScript.
+                    </p>
+                    <div class="wrap size-50">
+                        <div class="grid ">
+                            <div>
+                                <pre>
+var answer;
+var correctAnswer = "LONDON";
+answer = prompt("What is the capital of the United Kingdom?","");
+
+answer = answer.toUpperCase();
+                            </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="card-50 bg-white">
+                        <figure>
+                            <img src="https://source.unsplash.com/u76CN5rZeOU/800x600">
+                        </figure>
+                        <div class="flex-content">
+                            <h2>
+                                More built-in functions
+                            </h2>
+                            <ul class="description">
+                                <li><strong>parseInt():</strong> Converts a string to its integer equivalent</li>
+                                <li><strong>parseFloat():</strong> Converts a string to its floating-point decimal
+                                    equivalent</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="card-80 bg-white">
+                        <div class="flex-content">
+                            <h2>Mathematical built-in function example</h2>
+                            <br><br>
+                            <pre>
+var myVar1 = "3 abc";
+var myVar2 = 4.75;
+var myVar3 = "4.75 abc";
+
+myVar1 = parseInt(myVar1);
+myVar2 = parseInt(myVar2);
+myVar3 = parseFloat(myVar3);
+
+alert(myVar1); <span class="code-comment">// Displays 3</span>
+alert(myVar2); <span class="code-comment">// Displays 4</span>
+alert(myVar3); <span class="code-comment">// Displays 4.75</span>
+                        </pre>
+                        </div>
+                        <!-- end .flex-content-->
+                    </div>
+                    <!-- .end .card50 -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap size-60">
+                    <h3><strong>Functions types</strong></h3>
+                    <hr>
+                    <div class="bg-white shadow">
+                        <ul class="flexblock reasons">
+                            <li>
+                                <h2>Anonymous</h2>
+                            </li>
+                            <li>
+                                <h2>Prototype</h2>
+                            </li>
+                            <li>
+                                <h2>Closure</h2>
+                            </li>
+                            <li>
+                                <h2>Arrow</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h3><strong>Anonymous function</strong></h3>
+                            <p class="text-intro">In some cases, the function's name is omitted in the declaration.
+                                These functions are called anonymous functions.</p>
+                            <p>Anonymous functions are not hoisted in JavaScript and function expressions are created at
+                                runtime, so they cannot be used before they are defined in the code.</p>
+                        </div>
+                        <div class="column">
+                            <pre>
+var func = function() { 
+    <span class="code-comment">// function expression</span>
+} 
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h3><strong>Prototype function</strong></h3>
+                            <p class="text-intro">Prototype property means new properties and methods can be attached.
+                                <br> <br>
+                                Adding a method or property to the prototype property automatically adds that method or
+                                property to all objects of the function. </p>
+
+                            <p>In this code block, the display() method can be accessed by any Pen object, as this
+                                method is inherited at the time of object creation</p>
+                        </div>
+                        <div class="column">
+                            <pre>
+function Pen (penColor) {
+    <span class="code-comment">// this.penColor refers to the penColor property of the object calling the function</span>
+    this.penColor = penColor; 
+ }
+ 
+ <span class="code-comment">// Add the display () method to Pen prototype property </span>
+ Pen.prototype.display = function () {
+     console.log(this.penColor);
+ }
+ 
+ var lux = new Pen ("Blue");
+ 
+ lux.display ();     <span class="code-comment">// Blue</span>
+ <span class="code-comment">// in the previous statement, this points to the lux object</span>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h3><strong>Closure function</strong></h3>
+                            <p class="text-intro">Closures are inner functions that have access to the variables of the
+                                outer function - scope chain.
+                                <br><br>
+                                Closures can have one of the following three scope chains at any time: access to its own
+                                scope, access to variables in the outer function, or access to global variables.</p>
+                            <p>The makeDesignation() method is defined inside the display() method, hence it has access
+                                to the variables in the display() method. A closure can be created by defining a
+                                function inside another function.</p>
+                        </div>
+                        <div class="column">
+                            <pre>
+function display(name) {
+    var designation = "Your name is ";
+    
+    fullName = function makeDesignation() {
+         return designation + name;
+    }
+    return fullName();
+}
+    
+display ("Alex");
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            <section>
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column-40">
+                            <h3><strong>Arrow function</strong></h3>
+                            <p class="text-intro">Have the shorter syntax in comparison to conventional functions. One
+                                of the benefits of arrow functions becomes evident when the code contains various nested
+                                functions</p>
+                            <p>When using an arrow function, it will retain the scope of the calling object.</p>
+                        </div>
+                        <div class="column">
+                            <pre>
+function Pencil(newColor) {
+    this.color = newColor; <span class="code-comment">// assign the newColor argument value to the color property.</span>
+    alert(this); <span class="code-comment">// alerts the current Pencil object </span>
+    alert(this.color); <span class="code-comment">// alerts yellow</span>
+    setTimeout(() => 
+    {
+      alert(this); <span class="code-comment">// alerts the current Pencil object</span>
+      alert(this.color); <span class="code-comment">// alerts yellow</span>
+    }, 1000);
+}
+
+var yellowPencil = new Pencil("yellow"); <span class="code-comment">// Create a new Pencil object.</span>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            </section>
+            <section class="bg-gradient-v">
+                <div class="wrap">
+                    <h2 class="aligncenter">User Events</h2>
+                    <p class="aligncenter">Note that these are commonly used events. Many others exist but are beyond
+                        the scope of this course.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>abort</td>
+                                <td>Occurs when the loading of an image is aborted
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>change</td>
+                                <td>Occurs when a user changes the value of a form field</td>
+                            </tr>
+                            <tr>
+                                <td>focus</td>
+                                <td>Occurs when a user gives input or focus to a form element
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>mouseOver</td>
+                                <td>Occurs when the user moves the mouse pointer over a link or area object
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>submit</td>
+                                <td>Occurs when a form's Submit button is clicked
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>load</td>
+                                <td>Occurs when a page is loaded into the browser
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            </section>
+            <section class="bg-gradient-r">
+                <div class="wrap">
+                    <h2 class="aligncenter">JavaScript Event Handlers</h2>
+                    <p class="aligncenter">JavaScript event handlers designed to process the events such as the ones
+                        listed before.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Object</th>
+                                <th>Event Handler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>button</td>
+                                <td>onclick
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>reset</td>
+                                <td>onclick
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>submit</td>
+                                <td>onclick
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>checkbox</td>
+                                <td>onclick, onblur, onfocus
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>form</td>
+                                <td>onsubmit, onreset
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>area</td>
+                                <td>onclick, onmouseover, onmouseout
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Slide -->
+            <section>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap size-60">
+                    <h3><strong>Event propagation</strong></h3>
+                    <p>Event propagation takes place when a single event can be handled by more than one event handler defined at different levels of the DOM hierarchy.</p>
+                    <hr>
+                    <div class="bg-white shadow">
+                        <ul class="flexblock reasons">
+                            <li>
+                                <h2>Event bubbling</h2>
+                            </li>
+                            <li>
+                                <h2>Event capturing</h2>
+                            </li>
+                        </ul>
+                    </div> <!-- .end .bg-white shadow -->
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+            <!-- Slide -->
+            <section class="fullscreen bg-white">
+                <div class="flex-content">
+                    <h2><strong>Event Bubbling</strong></h2>
+                    <p class="text-intro">Determines which expressions will be evaluated before others
+                    </p>
+                    <p>The event propagates from one handler to another starting from the handler defined for the
+                        innermost element. From there, the handlers of the parent of the target elements are triggered
+                        until the event reaches the higher-most DOM element. </p>
+                </div>
+                <div class="wrap size-30">
+                    <figure>
+                        <img src="https://s3.amazonaws.com/jigyaasa_content_static/javascript-2.0/ch03/imageb.png">
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Slide -->
+            <section class="fullscreen bg-white">
+                <div class="flex-content">
+                    <h2><strong>Event Capturing</strong></h2>
+                    <p class="text-intro">All the ancestor elements that were higher up in the document (to the intended target) capture the event first before passing it down. 
+                    </p>
+                    <p>Modern browsers usually use event bubbling unless you specify that they use event capturing. </p>
+                </div>
+                <div class="wrap size-30">
+                    <figure>
+                        <img src="https://s3.amazonaws.com/jigyaasa_content_static/javascript-2.0/ch03/imagec.png">
+                    </figure>
+                </div>
+            </section>
+
+
+<!-- Slide -->
+<section class=" aligncenter">
+    <span class="background dark" style="background-image:url('https://source.unsplash.com/UJbHNoVPZW0/')"></span>
+    <div class="wrap">
+        <h1 class="text-landing text-shadow">Thank you</h1>
+        <p>Carlos Raygoza</p>
+    </div>
+
+
+
+
+        </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+
+    <script>
+        window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+
+</body>
+
+</html>

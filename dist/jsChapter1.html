@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>JavaScript Certification</title>
+    <meta name="description" content="Program to certify Engineers to JavaScript Language">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://epam.com/" /> <!-- YOUR URL/PERMALINK -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides Documentation: Classes" /> <!-- EDIT -->
+    <meta property="og:description" content="A quick reference guide. This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:23:46"> <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Documentation: Classes"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides Cheat Sheet.This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+</head>
+<body>
+
+<main role="main">
+    <article id="webslides" class="vertical">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+        <!-- First Slide -->
+        <section class="bg-black-blue aligncenter">
+            <span class="background dark" style="background-image:url('https://source.unsplash.com/vw3Ahg4x1tY/')"></span>
+            <!--.wrap = container (width: 90%) with fadein animation -->
+            <div class="wrap">
+                <p class="text-subtitle">JavaScript Certification</p>
+                <h1 class="text-landing strong">Introduction to JavaScript</h1>
+                <p class="text-intro"> Chapter One </p>
+                <div class="wrap">
+                    <a href="https://www.epam.com" target="_blank"><img class="size-20 aligncenter" src="./static/images/epam_logo.svg" title="epam website" alt="EPAM logo"></a>STRIVE FOR EXCELLENCE
+                </div>
+            </div>
+            <footer>
+                <div class="wrap">
+                    <p>
+                <span class="alignleft">
+                 <strong>Created by:</strong> JS Automation SET Practice EPAM Mexico.
+                </span>
+                        <span class="alignright">
+                      <a href="https://twitter.com/Ces_BearGdl" title="JS content on twitter">
+                        <svg class="fa-twitter">
+                          <use xlink:href="#fa-twitter"></use>
+                        </svg>
+                        @ces_beargdl
+                  </a>
+                        </span>
+                    </p>
+                </div>
+            </footer>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Second Slide -->
+        <section class="bg-black-blue aligncenter">
+            <h3 class="text-landing">JavaScript Ecosystem</h3>
+            <img  src="../static/images/JS%20Ecosystem.gif" alt="EPAM logo">
+        </section>
+        <!-- Third Slide -->
+        <section class="fullscreen">
+
+            <!--
+                <div class="embed dark">
+                    <div data-youtube data-youtube-id="Sh6lK57Cuk4" data-autoplay data-loop data-mute data-no-controls></div>
+                </div>
+ -->
+            <span class="background dark" style="background-image:url('https://source.unsplash.com/-C_PSYIov9Q/')"></span>
+
+            <div class="wrap size-60 bg-trans-dark">
+                <h2 class="aligncenter">
+                    <svg class="fa-history">
+                        <use xlink:href="#fa-history"></use>
+                    </svg>
+                    JS History
+                </h2>
+                <p class="text-intro aligncenter">Little bit of history.</p>
+                <hr>
+                <ul class="description">
+                    <li><span class="text-label">Created By:</span> Brendan Eich in just 10 day</li>
+                    <li><span class="text-label">When:</span> Developed in 1995 by Netscape under the name <strong>Moka</strong>,
+                        but was officially called <strong>livescript.</strong></li>
+                    <li><span class="text-label">Renamed:</span> It was later renamed JavaScript for marketing purposes.</li>
+                    <li><span class="text-label">Maintained:</span> By Mozilla and The Mozilla Foundation</li>
+                    <li><span class="text-label">Modern JS Gurus:</span> Addy Osmani, Paul Irish, Kent C. Dodds</li>
+                    <li><span class="text-label">Know More:</span> <a href="https://medium.com/@_benaston/lesson-1a-the-history-of-javascript-8c1ce3bffb17" target="_blank"> Article by Ben Aston about <strong>JS history</strong></a></li>
+                    <li><span class="text-label">VideoLink:</span> <a href="https://www.youtube.com/watch?v=Sh6lK57Cuk4" target="_blank">The Weird History of JavaScript</a></li>
+                </ul>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Fourth Slide -->
+        <section class="aligncenter fullscreen">
+            <!--.wrap = container (width: 90%) with fadein animation -->
+            <div class="wrap">
+                <h2><strong>JavaScript Characteristics</strong></h2>
+                <p class="text-intro">A closer look at the characteristics and features of this language.</p>
+                <ul class="flexblock">
+                    <li>
+                        <div>
+                            <h3 class="bg-purple">Object Oriented</h3>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <br>
+                                        JavaScript is an object-oriented language because it derives functionality
+                                        from a <strong>collection of built-in objects</strong>. Unlike many object-oriented languages
+                                        (like C or Java, which are class-based), JavaScript is prototype-based.
+                                        Prototype-based programming objects are mutable, so the behavior of new instances
+                                        of an object can be redefined. With JavaScript, you can also create your own custom objects.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3 class="bg-purple">Event Driven</h3>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <br>
+                                        The World Wide Web is based upon an event-driven model.
+                                        Events can trigger functions. Event triggers can be as simple as the user clicking a button,
+                                        clicking or moving the mouse over a hyperlink, or entering text into a text field.
+                                        Scripting can be tied to any of these events. <br>
+                                        Client-side JavaScript is part of the text within your HTML document.
+                                        When your browser retrieves a scripted page, it executes the JavaScript programs
+                                        and performs the appropriate operations in response to user events.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3 class="bg-purple">Platform Independent</h3>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <br>
+                                        As JavaScript programs are designed to run within HTML documents,
+                                        they are not tied to any specific hardware platform or operating system.
+                                        However, JavaScript programs are tied to a specific user agent. Generally,
+                                        these <strong>user agents are browsers</strong>.
+                                        Theoretically, you can implement the same JavaScript program on any current user
+                                        agent, such as Google Chrome, Mozilla Firefox, Microsoft Internet Explorer,
+                                        Edge or Safari (for Apple).
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <!--div required = padding li or li>a-->
+                        <div>
+                            <h3 class="bg-purple">Client-side scripts</h3>
+                            <br>
+                            <ol>
+                                <li>
+                                    <ol>
+                                        <li>
+                                            <p>Server-side scripting is used at the backend, where the source code is not viewable or hidden at the client side (browser).
+                                            On the other hand, <strong>client-side scripting</strong> is used at the front end which users can see from the browser.</p>
+                                        </li>
+                                        <li>
+                                            <p>As against, client-side scripting does not need any server interaction.</p>
+                                        </li>
+                                        <li>
+                                            <p>JavaScript is interpreted at runtime as opposed to being compiled so it's code can be developed and debugged easily.</p>
+                                        </li>
+                                        <li>
+                                            <p>The client-side script can effectively <strong>minimize</strong> the load to the server.</p>
+                                        </li>
+                                        <li>
+                                            <p><strong>Server-side scripting</strong> is more secure than client-side scripting as the server</p>
+                                        </li>
+                                    </ol>
+                                </li>
+
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li>
+                        <!--div required = padding li or li>a-->
+                        <div>
+                            <h3 class="bg-purple">Easy to learn</h3>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <br>
+                                        JavaScript is relatively easy to learn because the basic syntax is simple,
+                                        you can debug it quickly, and literally, thousands of examples with comments
+                                        are available for you to look-up and study all accross the web.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <!--div required = padding li or li>a-->
+                        <div>
+                            <h3 class="bg-purple">Case-Sensitive</h3>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <br>
+                                        This means that the language keywords, variables, function names, and any other
+                                        identifiers must always be typed with a consistent capitalization of letters.
+                                        ... <br>
+                                        <strong>NOTE</strong> − Care should be taken while writing variable and function names in <strong>JavaScript</strong>
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Fifth Slide -->
+        <section class="fullscreen">
+            <span class="background dark" style="background-image:url('https://source.unsplash.com/wn-KYaHwcis/')"></span>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-80 " >
+                <div class="grid vertical-align">
+                    <div class="column">
+                        <h3><strong>JS Programming Concepts</strong></h3>
+                        <p class="text-intro">Scripting languages are syntactically and semantically similar to programming languages.
+                            They provide less functionality than full programming languages but are usually easier to learn</p>
+                        <p>Every JavaScript programmer/Automation tester must know and master these concepts:</p>
+                        <div>
+                            <li>JavaScript Prototype</li>
+                            <li>JavaScript(ES6) Class</li>
+                            <li>Asynchronous Js</li>
+                            <li>Scope</li>
+                            <li>Callback</li>
+                            <li>Promises</li>
+                            <li>Async Await</li>
+                            <li>Conditionals Statements</li>
+                            <li>Built in Functions</li>
+                            <li>Events and Event Handling</li>
+                        </div>
+                        <p><br> You can see other important at:<strong> <a href="https://medium.com/@madasamy/15-javascript-concepts-that-every-nodejs-programmer-must-to-know-6894f5157cb7">15 Must Know JS Concepts</a>,
+                                by <a href="https://medium.com/@madasamy">Madasamy M</a></strong> :)</p>
+                    </div >
+                    <!-- .end .column -->
+                    <div class="column slideInRight bg-trans-dark size-30">
+                <pre>
+<span class="code-comment">&lt;!-- Object--&gt;</span>
+let myObj = computer {
+    "ram": "16 gb",
+    "processor": "I9",
+    "model": "Macbook Pro"
+}
+
+<span class="code-comment">&lt;!-- Method --&gt;</span>
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+<span class="code-comment">&lt;!-- Value --&gt;</span>
+let myObj = computer {
+    "ram": "16 gb",
+    "model": "Macbook Pro"
+}
+console.log(Object.values(computer));
+<i>// expected output: Array ["16 GB", "Macbook Pro"]</i>
+
+<span class="code-comment">&lt;!-- Property --&gt;</span>
+var myCar = {
+    make: 'Ford',
+    model: 'Mustang',
+    year: 1969
+};
+console.log(Object.keys(myCar));
+<i> // expected output: Array ["make", "model", "year"]</i>
+<i> // unassigned properties: myCar.color; will be "undefined"</i>
+
+                </pre>
+                    </div>
+                    <!-- .end .column -->
+                </div>
+                <!-- .end .grid -->
+                <hr>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Sixth Slide  -->
+        <section class="bg-black">
+            <video class="background-video" autoplay muted loop poster="https://webslides.tv/static/images/working.jpg">
+                <source src="https://webslides.tv/static/videos/working.mp4" type="video/mp4">
+            </video>
+            <div class="wrap">
+                <h2 class="text-landing slideInRight" ><strong>JavaScript Flavors</strong></h2>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Seventh Slide-->
+        <section>
+            <span class="background" style="background-image:url('https://source.unsplash.com/dCylNDcKzlk/')"></span>
+            <div class="wrap">
+                <div class="card-50 bg-white">
+                    <div class="flex-content">
+                        <h2>Java                        </h2>
+                        <p class="text-intro"><a href="https://www.tutorialspoint.com/What-are-the-major-features-of-Java-programming" target="_blank"> Java Features</a> if you want to learn more.... </p>
+                        <ul class="description">
+                            <li>                                It is compiled on a server before execution on a client.                            </li>
+                            <li>It is object-oriented; applications and applets consist of object classes with inheritance.</li>
+                            <li> Variable types must be declared (strong typing).</li>
+                            <li> It specifies static binding; object references must exist at compile time.</li>
+                            <li> Java Applets are called from HTML. </li>
+                        </ul>
+                    </div>
+                    <div class="flex-content">
+                        <h2>JavaScript                        </h2>
+                        <p class="text-intro"><a href="https://data-flair.training/blogs/features-of-javascript/" target="_blank">JS Features</a> if you want to learn more...</p>
+                        <ul class="description">
+                            <li> It is interpreted (not compiled) by a client. </li>
+                            <li> It is object-based; code uses built-in, extensible objects, but no classes or inheritance. </li>
+                            <li> Variable data types are not declared (loose typing). </li>
+                            <li> It specifies dynamic binding; object references checked at run time. </li>
+                            <li> Code integrated with and embedded in HTML. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Eight  Section-->
+        <section class="fullscreen">
+            <h2 class="text-landing aligncenter">ECMAS Versions</h2>
+            <p class="text-intro aligncenter"> JavaScript has undergone many version updates over the years.</p>
+            <br>
+            <br>
+            <div class="wrap">
+
+                <img class="alignleft size-50 slideInLeft" src="../static/images/ECMAScript_compatibility.png" alt="iPhone">
+
+                <p>ECMAS browser compatibility: <br><a href="https://kangax.github.io/compat-table/es6/" target="_blank"><code>https://kangax.github.io/compat-table/es6/</code></a></p>
+                <p>Wikipedia: <br><a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank"><code>https://en.wikipedia.org/wiki/ECMAScript</code></a></p>
+
+                <p><strong>ECMAS Backgroung</strong>:<br> The inventor of JavaScript, announced in 1997 that the European Computer
+                    Manufacturer's Association (ECMA) had approved JavaScript as an international standard. In an attempt to standardize JavaScript
+                    and diminish the differences between JavaScript and JScript, ECMA released its own scripting-language specification.
+                    ECMA promoted this standard as <strong>"ECMAScript"</strong>
+                    <br>
+                        <blockquote class="text-quote size-40">
+                            <p>This ECMA Standard is based on several originating technologies, the most well-known being JavaScript (Netscape) and JScript (Microsoft).</p>
+                            <p><cite> <a href="https://en.wikipedia.org/wiki/ECMAScript"> ECMA team</a></cite></p>
+                        </blockquote>
+                        <hr>
+                    <br>
+                    For more information about ECMA, consult its home page at ecma international. This site refers to the ECMAScript 2020, was published in June 2020. The most recent specification is the ninth edition, published in June 2018..</p>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Ninth Slide -->
+        <section class="fullscreen">
+            <div class="wrap">
+                <h2 class="aligncenter">Technologies <strong>based</strong> on JavaScript</h2>
+                <hr>
+                <div class="grid">
+                    <div class="column">
+                         <img class="size-50 aligncenter" src="../static/images/react-brands.svg" alt="react">
+                        <br><br>
+                        <br>
+                        <h3>React</h3>
+                        <p>React is used for building user interfaces. It uses different types of components to enable users to create Web applications in which data can change over time, without the need for reloading the page. This makes React fast. React Native, a set of libraries, announced by Facebook in 2015, provides a platform to develop native applications for iOS, Android, and UWP.</p>
+                        <p>Typically, React components are written in React-specific extension (JSX). The syntax for JSX is very different from JavaScript. Though developers can also use pure JavaScript</p>
+                    </div>
+                    <div class="column">
+                        <img class="aligncenter" src="../static/images/jQuery.svg" alt="react">
+                        <h3>jQuery</h3>
+                        <p>jQuery was designed for making navigation in a document, creating animations, handling events, and developing AJAX applications much easier.
+                            It also enables developers to create plug-ins. Basically, it is a DOM (Document Object Model) manipulation library that simplifies the syntax for controlling DOM elements to a great extent. Used as a plug-in, jQuery is extensible. It encourages developers to separate HTML markup and JavaScript code by using simple syntax for adding event handlers, instead of using HTML event attributes. jQuery eliminates cross-browser incompatibilities and provides an interface that is consistent across browsers.</p>
+                    </div>
+                </div>
+                <!--end .grid -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Tenth Slide -->
+        <section class="bg-gradient-gray">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50">
+                <h1 class="aligncenter"> Server-Side & Client-Side</h1>
+                <h3 class="aligncenter text-intro">Server-side applications of JavaScript</h3>
+                <hr>
+                <div class="bg-white shadow">
+                    <ul class="flexblock reasons">
+                        <li>
+                            <p>Server-Side JavaScript (SSJS) is a JavaScript's server-side scripting environment. It allows connection to databases and supports many of the rich features and functions of any server-side scripting language. For example, it enables you to connect Webpages to databases, enables server-side image maps and saves client state so the computer will remember where the client is during a multi-page process. </p>
+                        </li>
+                        <li>
+                            <p>Node.js is a JavaScript runtime environment that provides JavaScript the capability to be used for server-side scripting. It facilitates the creation of Web servers using modules. Applications developed using Node.js can run on Windows, Linux, Mac and many other servers. It enables event-driven programming on Web servers using JavaScript.</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- .end bg-white.shadow -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Eleventh Slide -->
+        <section class="bg-gradient-gray">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50">
+                <h3 class="aligncenter">Client-side applications of JavaScript</h3>
+                <hr>
+                <div class="bg-white shadow">
+                    <ul class="flexblock">
+                        <li>
+                            <p class="aligncenter">Can someone please tell me the benefits of Client-side JavaScript? </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- .end bg-white.shadow -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Twelfth Slide -->
+        <section class="bg-gradient-gray">
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50">
+                <h3 class="aligncenter">Client-side applications of JavaScript</h3>
+                <hr>
+                <div class="bg-white shadow">
+                    <ul class="flexblock reasons">
+                        <li>
+                            <p>Speed. Client-side JavaScript is very fast because it can be run immediately within the client-side browser. Unless outside resources are required, JavaScript is unhindered by network calls to a backend server. </p>
+                        </li>
+                        <li> <p>Control the Browser</p></li>
+                        <li><p>Interact with HTML Forms</p></li>
+                        <li><p>Read and Write Client State with Cookies</p></li>
+                    </ul>
+                </div>
+                <!-- .end bg-white.shadow -->
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <!-- Thirteenth Slide -->
+        <section class=" aligncenter">
+            <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+            <span class="background dark" style="background-image:url('https://source.unsplash.com/UJbHNoVPZW0/')"></span>
+            <div class="wrap">
+                <h1 class="text-landing text-shadow">Thank you</h1>
+            </div>
+        </section>
+    </article>
+</main>
+<!--main-->
+
+<!-- Required -->
+<script src="main.js"></script>
+<script>
+    window.ws = new WebSlides();
+</script>
+
+
+
+</body>
+</html>
